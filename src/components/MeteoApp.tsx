@@ -16,7 +16,7 @@ function MeteoApp() {
   const [cities, setCities] = useState<string[]>([
     "Paris",
     "Alger",
-    "Béjaïa",
+
     "Montpellier",
     "Lyon",
     "Biarritz",
