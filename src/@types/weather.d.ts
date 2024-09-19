@@ -1,11 +1,11 @@
-interface Weather {
+export interface Weather {
   id: number;
   main: string;
   description: string;
   icon: string;
 }
 
-interface Main {
+export interface Main {
   temp: number;
   feels_like: number;
   temp_min: number;
@@ -16,41 +16,41 @@ interface Main {
   grnd_level: number;
 }
 
-interface Wind {
-  vitesse: number;
+export interface Wind {
+  speed: number;
   deg: number;
-  rafale: number;
+  gust: number;
 }
 
-interface Sys {
+export interface Sys {
   type: number;
   id: number;
-  pays: string;
-  lever_du_soleil: number;
-  coucher_du_soleil: number;
+  country: string;
+  sunrise: number;
+  sunset: number;
 }
 
-interface Coord {
+export interface Coord {
   lon: number;
   lat: number;
 }
 
-interface Clouds {
-  tous: number;
+export interface Clouds {
+  all: number;
 }
 
-interface WeatherData {
+export interface WeatherData {
   coord: Coord;
   weather: Weather[];
   base: string;
   main: Main;
   visibility: number;
   wind: Wind;
-  nuages: Clouds;
+  clouds: Clouds;
   dt: number;
   sys: Sys;
-  fuseau_horaire: number;
+  timezone: number;
   id: number;
-  nom: string;
+  name: string;
   cod: number;
 }
