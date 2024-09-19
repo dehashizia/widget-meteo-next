@@ -15,10 +15,12 @@ const capitalizeCity = (city: string) => {
 function MeteoApp() {
   const [cities, setCities] = useState<string[]>([
     "Paris",
+    "Alger",
+    "Béjaïa",
     "Montpellier",
     "Lyon",
     "Biarritz",
-    "Tournon-sur-rhone",
+    "Tournon-sur-Rhône ",
     "vensac",
     "Soulac-sur-mer",
     "Perpignan",
