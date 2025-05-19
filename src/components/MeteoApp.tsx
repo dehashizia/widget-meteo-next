@@ -15,15 +15,15 @@ const capitalizeCity = (city: string) => {
 function MeteoApp() {
   const [cities, setCities] = useState<string[]>([
     "Paris",
-    "Alger",
+    "London",
 
-    "Montpellier",
-    "Lyon",
-    "Biarritz",
-    "Tournon-sur-Rhône ",
-    "vensac",
-    "Soulac-sur-mer",
-    "Perpignan",
+    "New York",
+    "San Francisco",
+    "Rio de Janeiro",
+    "Montréal",
+    "Tokyo",
+    "Chicago",
+    "Sydney",
   ]); // Liste de villes par défaut
 
   const handleAddCity = (event: React.FormEvent<HTMLFormElement>) => {
